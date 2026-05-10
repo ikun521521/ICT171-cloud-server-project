@@ -1,2 +1,47 @@
-# ICT171-cloud-server-project
-ICT171 cloud server project using Amazon EC2, Ubuntu, Nginx, and Bash scripting.
+ICT171 Cloud Server Project
+
+Student Information
+
+Name: Shuchang Zhang  
+Student Number: 35175114  
+Unit: ICT171 Introduction to Server Environments and Architectures  
+
+Project Overview
+My project is a personal portfolio website and server status dashboard hosted on a cloud server. The website is deployed on an Amazon EC2 virtual machine. The server uses Ubuntu Server 24.04 LTS as the operating system, and Nginx is used as the web server.
+The main purpose of this project is to show that I can create, configure, and manage a basic cloud server. It also shows that I can publish a simple website online and use a Bash script to display some server information.
+This project is based on Infrastructure as a Service, because I created and managed a virtual server by myself. I was responsible for setting up the server, installing software, configuring the web server, and making the website accessible through a public IP address.
+
+Cloud Server Information
+Cloud Provider: Amazon Web Services  
+Service: Amazon EC2  
+Region: Asia Pacific Sydney / ap-southeast-2  
+Instance Name: ict171-cloud-server  
+Instance ID: i-05a1bdfd62e34d683  
+Operating System: Ubuntu Server 24.04 LTS  
+Instance Type: t3.micro  
+Public IPv4 Address: 15.134.211.37  
+Public IPv4 DNS: ec2-15-134-211-37.ap-southeast-2.compute.amazonaws.com  
+
+Website Links
+The website can currently be accessed using the public IP address:
+Main Website:  
+http://15.134.211.37
+Server Status Dashboard:  
+http://15.134.211.37/status.html
+
+Completed Work
+So far, I have completed the main setup of my cloud server project.First, I created an Amazon EC2 instance in the Sydney region. I selected Ubuntu Server 24.04 LTS as the operating system because it is commonly used for cloud servers and is suitable for this project.After creating the instance, I configured the security group rules. I allowed SSH access so that I could connect to the server, and I also allowed HTTP and HTTPS traffic so that the website could be opened in a web browser.I connected to the server using EC2 Instance Connect. After logging in to the server, I installed Nginx and enabled it so that it could run as the web server.I then created a custom homepage for my ICT171 project. This page explains the purpose of the project and shows that the server is running successfully.I also created a Bash script called generate_status.sh. This script collects basic server information and creates a server status web page. The output of the script is saved as status.html, which can be viewed online through the browser.
+
+Bash Script
+The Bash script generate_status.sh is used to generate a simple server status dashboard.
+The script collects useful server information, including:
+- Server time
+- Server uptime
+- Disk usage
+- Memory usage
+- Nginx status
+- Public IPv4 address
+After collecting this information, the script creates a web page called status.html. This page allows users to see the current status of the cloud server from a browser.This part of the project shows that I can use basic Linux commands and Bash scripting to collect server information and display it on a website.
+
+Next Steps
+The next step is to improve the project by connecting a domain name to the server using DNS. This will make the website easier to access because users will not need to remember the public IP address.After the domain name is working, I will install SSL/TLS using Certbot. This will allow the website to use HTTPS, which makes the website more secure.I will also update my documentation with screenshots. The screenshots will show the important steps I completed, such as creating the EC2 instance, connecting to the server, installing Nginx, and opening the website in a browser.Finally, I will record the video explainer and prepare the final PDF report for LMS submission.
