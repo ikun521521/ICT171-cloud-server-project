@@ -43,8 +43,6 @@ The script collects useful server information, including:
 - Public IPv4 address
 After collecting this information, the script creates a web page called status.html. This page allows users to see the current status of the cloud server from a browser.This part of the project shows that I can use basic Linux commands and Bash scripting to collect server information and display it on a website.
 
-## Next Steps
-The next step is to improve the project by connecting a domain name to the server using DNS. This will make the website easier to access because users will not need to remember the public IP address.After the domain name is working, I will install SSL/TLS using Certbot. This will allow the website to use HTTPS, which makes the website more secure.I will also update my documentation with screenshots. The screenshots will show the important steps I completed, such as creating the EC2 instance, connecting to the server, installing Nginx, and opening the website in a browser.Finally, I will record the video explainer and prepare the final PDF report for LMS submission.
 ## Screenshots and Evidence
 The `screenshots` folder contains evidence of the cloud server setup, web server configuration, DNS setup, HTTPS configuration, and website accessibility.
 1. `01-ec2-instance-running.png` - Shows the AWS EC2 instance running successfully.
