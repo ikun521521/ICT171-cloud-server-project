@@ -43,6 +43,16 @@ The script collects useful server information, including:
 - Public IPv4 address
 After collecting this information, the script creates a web page called status.html. This page allows users to see the current status of the cloud server from a browser.This part of the project shows that I can use basic Linux commands and Bash scripting to collect server information and display it on a website.
 
+## Final Project Status
+The main cloud server project has been completed successfully. The Amazon EC2 instance is running, Nginx has been installed and configured, and the custom ICT171 website is accessible online.
+The domain name `shuchangict171.com` has been connected to the EC2 public IP address using Cloudflare DNS records. Both the root domain and the `www` subdomain can open the website successfully.
+SSL/TLS has also been configured using Certbot and Let's Encrypt. The website is now accessible through HTTPS using the following links:
+- Main Website: https://shuchangict171.com
+- WWW Website: https://www.shuchangict171.com
+- Server Status Dashboard: https://shuchangict171.com/status.html
+The server status dashboard is generated using the Bash script `generate_status.sh`. A cron job has also been configured to automatically update the server status page every five minutes.
+The remaining work is to prepare the final PDF report and record the video explanation for LMS submission.
+
 ## Screenshots and Evidence
 The `screenshots` folder contains evidence of the cloud server setup, web server configuration, DNS setup, HTTPS configuration, and website accessibility.
 1. `01-ec2-instance-running.png` - Shows the AWS EC2 instance running successfully.
