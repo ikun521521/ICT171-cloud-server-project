@@ -22,12 +22,12 @@ Instance Type: t3.micro
 Public IPv4 Address: 15.134.211.37  
 Public IPv4 DNS: ec2-15-134-211-37.ap-southeast-2.compute.amazonaws.com  
 
-Website Links
-The website can currently be accessed using the public IP address:
-Main Website:  
-http://15.134.211.37
-Server Status Dashboard:  
-http://15.134.211.37/status.html
+Main Website:
+https://shuchangict171.com
+WWW Website:
+https://www.shuchangict171.com
+Server Status Dashboard:
+https://shuchangict171.com/status.html
 
 Completed Work
 So far, I have completed the main setup of my cloud server project.First, I created an Amazon EC2 instance in the Sydney region. I selected Ubuntu Server 24.04 LTS as the operating system because it is commonly used for cloud servers and is suitable for this project.After creating the instance, I configured the security group rules. I allowed SSH access so that I could connect to the server, and I also allowed HTTP and HTTPS traffic so that the website could be opened in a web browser.I connected to the server using EC2 Instance Connect. After logging in to the server, I installed Nginx and enabled it so that it could run as the web server.I then created a custom homepage for my ICT171 project. This page explains the purpose of the project and shows that the server is running successfully.I also created a Bash script called generate_status.sh. This script collects basic server information and creates a server status web page. The output of the script is saved as status.html, which can be viewed online through the browser.I also configured a cron job to automatically run the status script every five minutes.
